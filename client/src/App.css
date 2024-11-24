@@ -1,0 +1,22 @@
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: #1E1E1F;
+    border: 1px solid #5a5959;
+    margin: 30px 250px;
+    margin-right: 180px;
+    border-radius: 10px;
+    padding: 20px 0px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1200px) {
+    .container {
+        margin: 20px;
+        padding: 20px;
+    }
+}

@@ -1,0 +1,132 @@
+.Experience{
+    margin-top: 60px;
+    margin-left: 200px;
+    font-family: sans-serif ;
+}
+
+
+.Experience .headline{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+
+}
+
+.Experience .headline h1{
+    font-size: 2em;
+    color: black;
+    margin-bottom: 5px;
+    position: relative;
+    font-weight: 700;
+}
+.Experience .headline h1::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    display: block;
+    margin: 5px auto;
+    background-color: rgb(11, 59, 234); 
+}
+
+
+section#timeline {
+    width: 100%;
+    position: relative;
+    margin-bottom: 150px;
+}
+
+section#timeline:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 30%;
+    top: 0;
+    margin: 0 0 0 -105px;
+    width: 1px;
+    height: 90%;
+    background: rgba(101, 98, 98, 0.2);
+}
+
+section#timeline img{
+    display: block;
+    width: 70px;
+    padding: 5px 0;
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    left: 50%;
+    margin: 0 0 0 -140px;
+}
+
+section#timeline article {
+    width: 60%;
+    margin: 0 0 20px 0;
+    position: relative;
+    
+}
+
+section#timeline article:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+section#timeline article div.inner {
+    width: 56%;
+    float: left;
+    margin: 15px 0 0 0;
+    padding: 5px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+section#timeline article div.inner h2 {
+    padding-bottom: 5px;
+    padding-left: 3px;
+    margin: 0;
+    color: black;
+    font-size: 20px;
+    position: relative;
+    font-weight: 700;
+}
+
+
+
+section#timeline article div.inner p {
+    padding: 5px;
+    margin: 0px;
+    font-size: 14px;
+    color: #504f4f;
+    border-radius: 0 0 6px 6px;
+   
+}
+
+section#timeline article:nth-child(n) div.inner {
+    float: right;
+}
+
+section#timeline article:nth-child(n) div.inner h2:after {
+    left: -5px;
+}
+
+@media (max-width: 1300px){
+    .Experience{
+        margin-left: 50px;
+    }
+    section#timeline article div.inner p{
+        margin-right: -100px;
+    }
+    .Experience .title{
+        margin-left: 200px;
+    }
+}
+
+@media (max-width: 450px) {
+    
+    .Experience .title{
+        margin-left: 80px;
+    }
+}

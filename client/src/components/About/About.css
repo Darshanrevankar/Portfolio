@@ -1,0 +1,70 @@
+.about_card{
+    margin-left: 200px;
+    margin-top: 100px;
+}
+.about_container .headline{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+
+}
+
+.about_container .headline h1{
+    font-size: 2em;
+    color: black;
+    margin-bottom: 5px;
+    position: relative;
+    font-weight: 700;
+}
+.about_container .headline h1::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    display: block;
+    margin: 5px auto;
+    background-color: rgb(11, 59, 234); 
+}
+
+
+.about_container {
+   width: 100%;
+   padding: 0;
+}
+.about_container img{
+    width: 400px;
+    max-width: 100%;
+}
+.about_info{
+    width: 700px;
+    text-align: justify;
+}
+.main{
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (max-width: 1300px){
+    .about_card{
+        margin-left: 0;
+        padding: 30px;
+    }
+    .about_container .title{
+        margin-left: 200px;
+    }
+}
+
+@media (max-width: 450px) {
+    
+    .about_container .title{
+        margin-left: 80px;
+    }
+}
